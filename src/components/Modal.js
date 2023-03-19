@@ -5,14 +5,19 @@ import Rating from '../common/Rating';
 import { MODAL_ITEM } from '../redux/action';
 
 const ModalPage = ({movie}) => {
-    console.log(movie);
+    // console.log(movie);
     const dispatch = useDispatch();
+
+    const closeModal = ()=>{
+      dispatch({
+        type:MODAL_ITEM,
+      })
+    }
+
     const handleClick = (e) => {
       if (e.target.classList.contains("backdrop")) {
         // setSelectedImg(null);
-        dispatch({
-          type:MODAL_ITEM,
-        })
+        closeModal();
       }
     };
   return (
@@ -46,6 +51,7 @@ const ModalPage = ({movie}) => {
             <FavoriteButton movie={movie} />
           </div>
         </div>
+        <div className='modal-close' onClick={closeModal} >x</div>
       </div>
     </div>
   )

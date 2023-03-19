@@ -1,5 +1,5 @@
 
-## run project by type enter the  "npm start"
+## run project by type and enter the  "npm start"
 
 ## after start the project you can open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 

@@ -128,10 +128,21 @@ img{
 
 
 .modal-card{
+  position: relative;
   width:60%;
   color: white;
   background-color: blueviolet;
 }
+
+.modal-close{
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  right: 10px;
+  font-size: 25px;
+  color: lavenderblush;
+}
+
 .backdrop img{
 
   width:200px;
@@ -173,7 +184,7 @@ h2{
 
 @media screen and (max-width: 600px) {
   input{
-    width: 80px;
+    width: 60px;
   }
   .card{
     height: 350px;
